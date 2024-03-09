@@ -1,0 +1,23 @@
+@baseUrl = http://localhost:3005
+
+# @name checkout
+POST  {{baseUrl}}/checkout
+Content-Type: application/json
+
+###
+
+# @name customer_portal
+POST  {{baseUrl}}/customer-portal
+Content-Type: application/json
+
+{
+    "sessionId": "cs_test_1234"
+}
+
+###
+
+# @name webhook
+POST  {{baseUrl}}/webhook
+Content-Type: application/json
+
+###
